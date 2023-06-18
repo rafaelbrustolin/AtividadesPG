@@ -1,0 +1,12 @@
+﻿  Layer.cpp
+  Source.cpp
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(230,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(231,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(233,26): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(263,22): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(268,24): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(282,23): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(328,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Sprite.cpp
+  Generating Code...
+  M5 colisão Rafael Brustolin e Gabriel Hoffmann.vcxproj -> C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\x64\Debug\M5 colisão Rafael Brustolin e Gabriel Hoffmann.exe

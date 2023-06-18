@@ -1,0 +1,14 @@
+﻿  gl_utils.cpp
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\gl_utils.h(20,10): fatal  error C1083: Cannot open include file: 'GLFW/glfw3.h': No such file or directory
+  Layer.cpp
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Sprite.h(17,10): fatal  error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
+  Source.cpp
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Source.cpp(1,10): fatal  error C1083: Cannot open include file: 'gl_utils.h': No such file or directory
+  Sprite.cpp
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\Sprite.h(17,10): fatal  error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
+  stb_image.cpp
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\stb_image.cpp(228,14): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\stb_image.cpp(290,14): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\stb_image.cpp(328,14): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\I508464\source\repos\M5 colisão Rafael Brustolin e Gabriel Hoffmann\M5 colisão Rafael Brustolin e Gabriel Hoffmann\stb_image.cpp(4221,15): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
