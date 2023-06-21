@@ -35,53 +35,27 @@ Sprite::Sprite(float vertices[])
 	glEnableVertexAttribArray(2);
 
 	transform = glm::mat4(1); //matriz identidade
-	texID = -1; 
-	shader = NULL; 
+	texID = -1;
+	shader = NULL;
 	pos = glm::vec3(0.0f, 0.0f, 0.0f);
 	scale = glm::vec3(1.0f, 1.0f, 1.0f);
-	angle = 0.0f;	
 }
 
 void Sprite::setTexture(int texID)
 {
 	this->texID = texID;
 }
-int Sprite::getTexture()
-{
-	return texID;
-}
-glm::vec3 Sprite::getPosition()
-{
-	return pos;
-}
 
-void Sprite::setRotation(float angle, glm::vec3 axis, bool reset)
+void Sprite::setTranslation(glm::vec3 displacements)
 {
-	if (reset) transform = glm::mat4(1);
-	transform = glm::rotate(transform, angle, axis);
-}
-
-void Sprite::setTranslation(glm::vec3 displacements, bool reset)
-{
-	if (reset) transform = glm::mat4(1);
+	transform = glm::mat4(1);
 	transform = glm::translate(transform, displacements);
 }
 
-void Sprite::setScale(glm::vec3 scaleFactors, bool reset)
+void Sprite::setScale(glm::vec3 scaleFactors)
 {
-	if (reset) transform = glm::mat4(1);
 	transform = glm::scale(transform, scaleFactors);
 	scale = scaleFactors;
-}
-
-float Sprite::getPosXInicial()
-{
-	return posXInicial;
-}
-
-float Sprite::getPosYInicial()
-{
-	return posYInicial;
 }
 
 float Sprite::getPosZInicial()
@@ -125,7 +99,7 @@ void Sprite::setPosZInicial(float z)
 }
 
 void Sprite::setOffsetX(float x)
-{	
+{
 	offsetx = x;
 }
 void Sprite::setOffsetY(float y)
@@ -145,23 +119,16 @@ float Sprite::getOffsetX()
 {
 	return offsetx;
 }
-float Sprite::getOffsetY()
-{
-	return offsety;
-}
+
 float Sprite::getRateX()
 {
 	return ratex;
-}
-float Sprite::getRateY()
-{
-	return ratey;
 }
 
 void Sprite::draw()
 {
 	glBindTexture(GL_TEXTURE_2D, texID);
-	glUniform1i(glGetUniformLocation(shader, "ourTexture1"), 0);
+	glUniform1i(glGetUniformLocation(shader, "texture1"), 0);
 
 	glBindVertexArray(VAO);
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -170,10 +137,8 @@ void Sprite::draw()
 
 void Sprite::update()
 {
-	//A matriz de transformação
 	setTranslation(pos);
-	setRotation(angle, glm::vec3(0.0f, 0.0f, 1.0f), false);
-	setScale(scale, false);
+	setScale(scale);
 
 	GLint transformLoc = glGetUniformLocation(shader, "model");
 	glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));

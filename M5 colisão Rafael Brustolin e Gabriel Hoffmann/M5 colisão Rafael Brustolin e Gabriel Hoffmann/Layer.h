@@ -16,11 +16,11 @@ class Layer
 public:
 
 	void updateCamada();
-	void adcionarObjeto(float posX, float posY, float posZ, float dimX, float dimY, float dimZ, float offsetx, float offsety, float ratex, float ratey, GLuint shader, float vertice[]);
-	void setDesloc(float deslocamento);
-	float getDesloc();
+	void adicionarObjeto(float posX, float posY, float posZ, float dimX, float dimY, float dimZ, float offsetx, float offsety, float ratex, float ratey, GLuint shader, float vertice[]);
+	void setDeslocamento(float deslocamento);
+	float getDeslocamento();
 
-	float desloc = 0;
+	float deslocamento = 0;
 
 	Sprite* obj;
 	vector <Sprite*> objects;
